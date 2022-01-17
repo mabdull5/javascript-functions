@@ -1,9 +1,15 @@
-function seed() {}
+function seed(a,b,c) {
+  return [a,b,c];
+}
 
-function same([x, y], [j, k]) {}
+function same([x, y], [j, k]) {
+  return [x,y] === [j,k] ? true: false;
+}
 
 // The game state to search for `cell` is passed as the `this` value of the function.
-function contains(cell) {}
+function contains(cell) {
+  return this.cell.isNaN ? false : true;
+}
 
 const printCell = (cell, state) => {};
 
